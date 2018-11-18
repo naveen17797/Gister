@@ -1,5 +1,7 @@
 # Gister
 ![launcher](https://user-images.githubusercontent.com/18109258/48672196-aa343e00-eb58-11e8-88ff-9c718cb3a8d7.png)
+# How to get access token for gister
+Here is an video tutorial (https://www.youtube.com/watch?v=GKGUDhaStE0), the procedure is same, but at 0:15 choose the scope as gist and generate the token
 # What it does?
 an useful tool for sharing code via gist, it helps to paste mutliple files in gist at once.
 # Why?

@@ -43,6 +43,7 @@ private slots:
     void on_create_gist_clicked();
 
     void on_create_another_gist_clicked();
+    void ui_screen::drawLinearGradient();
 
 private:
     QString GITHUB_API_URL = "https://api.github.com/";

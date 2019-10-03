@@ -11,10 +11,7 @@ welcomeScreen::welcomeScreen(QWidget *parent) :
     QTimer::singleShot(1000, this, SLOT(switch_screen()));
 }
 
-welcomeScreen::~welcomeScreen()
-{
-    delete ui;
-}
+
 void welcomeScreen::switch_screen() {
     this->close();
     ui_screen  *ui_scr = new ui_screen();

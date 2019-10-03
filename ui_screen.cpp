@@ -233,3 +233,14 @@ void ui_screen::on_create_another_gist_clicked()
 {
     ui->multiScreen->setCurrentIndex(ui_screen::GIST_SCREEN);
 }
+
+void ui_screen::drawLinearGradient() {
+    mgr = new QNetworkAccessManager(this);
+    GISTER_SETTINGS = new QSettings(QDir::currentPath() + "/gister.ini", QSettings::IniFormat);
+    ui->authenciation_progress->setVisible(false);
+    ui->create_gist_progress->setVisible(false);
+    ui->create_gist_progress_label->setVisible(false);
+     danger = "QProgressBar::chunk {background: QLinearGradient( x1: 0, y1: 0, x2: 1, y2: 0,stop: 0 #FF0350,stop: 0.4999 #FF0020,stop: 0.5 #FF0019,stop: 1 #FF0000 );border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border: .px solid black;}";
+     safe= "QProgressBar::chunk {background: QLinearGradient( x1: 0, y1: 0, x2: 1, y2: 0,stop: 0 #78d,stop: 0.4999 #46a,stop: 0.5 #45a,stop: 1 #238 );border-bottom-right-radius: 7px;border-bottom-left-radius: 7px;border: 1px solid black;}";
+
+}
